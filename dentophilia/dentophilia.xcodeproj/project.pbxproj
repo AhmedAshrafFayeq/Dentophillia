@@ -16,6 +16,12 @@
 		2DD6BA4D27562E58003B2CEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DD6BA4B27562E58003B2CEE /* LaunchScreen.storyboard */; };
 		2DD6BA5827562E59003B2CEE /* dentophiliaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD6BA5727562E59003B2CEE /* dentophiliaTests.swift */; };
 		2DD6BA6327562E59003B2CEE /* dentophiliaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD6BA6227562E59003B2CEE /* dentophiliaUITests.swift */; };
+		2DD6BA832756322B003B2CEE /* DentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD6BA822756322B003B2CEE /* DentoViewController.swift */; };
+		2DD6BA8B275632BC003B2CEE /* DentoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD6BA8A275632BC003B2CEE /* DentoPresenter.swift */; };
+		2DD6BA90275636E0003B2CEE /* DentoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD6BA8F275636E0003B2CEE /* DentoInteractor.swift */; };
+		2DD6BA95275636EC003B2CEE /* DentoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD6BA94275636EC003B2CEE /* DentoRouter.swift */; };
+		2DD6BAAB27563CEE003B2CEE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DD6BAAD27563CEE003B2CEE /* Localizable.strings */; };
+		2DD6BAB527563D7B003B2CEE /* LocalizationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD6BAB427563D7B003B2CEE /* LocalizationSystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,15 @@
 		2DD6BA5E27562E59003B2CEE /* dentophiliaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dentophiliaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD6BA6227562E59003B2CEE /* dentophiliaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dentophiliaUITests.swift; sourceTree = "<group>"; };
 		2DD6BA6427562E59003B2CEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DD6BA822756322B003B2CEE /* DentoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentoViewController.swift; sourceTree = "<group>"; };
+		2DD6BA8A275632BC003B2CEE /* DentoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentoPresenter.swift; sourceTree = "<group>"; };
+		2DD6BA8F275636E0003B2CEE /* DentoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentoInteractor.swift; sourceTree = "<group>"; };
+		2DD6BA94275636EC003B2CEE /* DentoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentoRouter.swift; sourceTree = "<group>"; };
+		2DD6BA9E27563C4A003B2CEE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		2DD6BAAC27563CEE003B2CEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2DD6BAB227563CF2003B2CEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		2DD6BAB327563D1D003B2CEE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2DD6BAB427563D7B003B2CEE /* LocalizationSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationSystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +116,9 @@
 		2DD6BA3C27562E52003B2CEE /* dentophilia */ = {
 			isa = PBXGroup;
 			children = (
+				2DD6BA8027563187003B2CEE /* Features */,
+				2DD6BA9A275639D2003B2CEE /* Utilities */,
+				2DD6BA99275639CB003B2CEE /* Services */,
 				2DD6BA3D27562E52003B2CEE /* AppDelegate.swift */,
 				2DD6BA3F27562E52003B2CEE /* SceneDelegate.swift */,
 				2DD6BA4127562E52003B2CEE /* ViewController.swift */,
@@ -129,6 +147,49 @@
 				2DD6BA6427562E59003B2CEE /* Info.plist */,
 			);
 			path = dentophiliaUITests;
+			sourceTree = "<group>";
+		};
+		2DD6BA8027563187003B2CEE /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				2DD6BA81275631A9003B2CEE /* ParentProtocols */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		2DD6BA81275631A9003B2CEE /* ParentProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				2DD6BA822756322B003B2CEE /* DentoViewController.swift */,
+				2DD6BA8A275632BC003B2CEE /* DentoPresenter.swift */,
+				2DD6BA8F275636E0003B2CEE /* DentoInteractor.swift */,
+				2DD6BA94275636EC003B2CEE /* DentoRouter.swift */,
+			);
+			path = ParentProtocols;
+			sourceTree = "<group>";
+		};
+		2DD6BA99275639CB003B2CEE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2DD6BA9A275639D2003B2CEE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2DD6BAA227563C9D003B2CEE /* Languages */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2DD6BAA227563C9D003B2CEE /* Languages */ = {
+			isa = PBXGroup;
+			children = (
+				2DD6BAAD27563CEE003B2CEE /* Localizable.strings */,
+				2DD6BAB427563D7B003B2CEE /* LocalizationSystem.swift */,
+			);
+			path = Languages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +277,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 2DD6BA3127562E52003B2CEE;
 			productRefGroup = 2DD6BA3B27562E52003B2CEE /* Products */;
@@ -235,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DD6BA4D27562E58003B2CEE /* LaunchScreen.storyboard in Resources */,
+				2DD6BAAB27563CEE003B2CEE /* Localizable.strings in Resources */,
 				2DD6BA4A27562E58003B2CEE /* Assets.xcassets in Resources */,
 				2DD6BA4527562E52003B2CEE /* Main.storyboard in Resources */,
 			);
@@ -261,10 +324,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DD6BA832756322B003B2CEE /* DentoViewController.swift in Sources */,
+				2DD6BA8B275632BC003B2CEE /* DentoPresenter.swift in Sources */,
 				2DD6BA4227562E52003B2CEE /* ViewController.swift in Sources */,
+				2DD6BA90275636E0003B2CEE /* DentoInteractor.swift in Sources */,
 				2DD6BA4827562E52003B2CEE /* dentophilia.xcdatamodeld in Sources */,
 				2DD6BA3E27562E52003B2CEE /* AppDelegate.swift in Sources */,
+				2DD6BAB527563D7B003B2CEE /* LocalizationSystem.swift in Sources */,
 				2DD6BA4027562E52003B2CEE /* SceneDelegate.swift in Sources */,
+				2DD6BA95275636EC003B2CEE /* DentoRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +372,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				2DD6BA4427562E52003B2CEE /* Base */,
+				2DD6BA9E27563C4A003B2CEE /* ar */,
+				2DD6BAB227563CF2003B2CEE /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -316,6 +386,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		2DD6BAAD27563CEE003B2CEE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DD6BAAC27563CEE003B2CEE /* en */,
+				2DD6BAB327563D1D003B2CEE /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -323,6 +402,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -384,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
