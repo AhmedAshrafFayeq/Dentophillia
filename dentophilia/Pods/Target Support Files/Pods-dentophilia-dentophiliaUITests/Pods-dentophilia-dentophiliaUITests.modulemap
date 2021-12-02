@@ -1,0 +1,6 @@
+framework module Pods_dentophilia_dentophiliaUITests {
+  umbrella header "Pods-dentophilia-dentophiliaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

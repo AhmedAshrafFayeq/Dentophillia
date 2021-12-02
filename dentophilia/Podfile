@@ -1,0 +1,19 @@
+
+target 'dentophilia' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for dentophilia
+
+	pod 'Alamofire', '~> 5.4'
+
+  target 'dentophiliaTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'dentophiliaUITests' do
+    # Pods for testing
+  end
+
+end
