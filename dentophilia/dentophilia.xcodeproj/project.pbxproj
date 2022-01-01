@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D17AB42277F3D5A00CCF963 /* CustomInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D17AB41277F3D5A00CCF963 /* CustomInterceptor.swift */; };
+		2D17AB4A277F400700CCF963 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D17AB49277F400700CCF963 /* Constants.swift */; };
+		2D17AB4F277F486300CCF963 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D17AB4E277F486300CCF963 /* NetworkManager.swift */; };
 		2DD6BA3E27562E52003B2CEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD6BA3D27562E52003B2CEE /* AppDelegate.swift */; };
 		2DD6BA4027562E52003B2CEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD6BA3F27562E52003B2CEE /* SceneDelegate.swift */; };
 		2DD6BA4227562E52003B2CEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD6BA4127562E52003B2CEE /* ViewController.swift */; };
@@ -45,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D17AB41277F3D5A00CCF963 /* CustomInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInterceptor.swift; sourceTree = "<group>"; };
+		2D17AB49277F400700CCF963 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2D17AB4E277F486300CCF963 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2DD6BA3A27562E52003B2CEE /* dentophilia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dentophilia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD6BA3D27562E52003B2CEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DD6BA3F27562E52003B2CEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,8 +124,16 @@
 				8EAE0C212A6F3381A140B458 /* Pods-dentophiliaTests.debug.xcconfig */,
 				B417C5FA74D285C39B8D34D8 /* Pods-dentophiliaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		2D17AB40277F3D1300CCF963 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				2D17AB41277F3D5A00CCF963 /* CustomInterceptor.swift */,
+				2D17AB4E277F486300CCF963 /* NetworkManager.swift */,
+			);
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 		2DD6BA3127562E52003B2CEE = {
@@ -202,6 +216,7 @@
 		2DD6BA99275639CB003B2CEE /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				2D17AB40277F3D1300CCF963 /* NetworkService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -210,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				2DD6BAA227563C9D003B2CEE /* Languages */,
+				2D17AB49277F400700CCF963 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -473,7 +489,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D17AB4F277F486300CCF963 /* NetworkManager.swift in Sources */,
 				2DD6BA832756322B003B2CEE /* DentoViewController.swift in Sources */,
+				2D17AB4A277F400700CCF963 /* Constants.swift in Sources */,
 				2DD6BA8B275632BC003B2CEE /* DentoPresenter.swift in Sources */,
 				2DD6BA4227562E52003B2CEE /* ViewController.swift in Sources */,
 				2DD6BA90275636E0003B2CEE /* DentoInteractor.swift in Sources */,
@@ -481,6 +499,7 @@
 				2DD6BA3E27562E52003B2CEE /* AppDelegate.swift in Sources */,
 				2DD6BAB527563D7B003B2CEE /* LocalizationSystem.swift in Sources */,
 				2DD6BA4027562E52003B2CEE /* SceneDelegate.swift in Sources */,
+				2D17AB42277F3D5A00CCF963 /* CustomInterceptor.swift in Sources */,
 				2DD6BA95275636EC003B2CEE /* DentoRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
