@@ -9,7 +9,8 @@ import Foundation
 import Alamofire
 
 struct ServerConstants {
-    static let baseServer =  "https://myntra.gizasystems-apps.com:8101"
+    static let baseUrl  = "https://reqres.in/api"
+    static let usersApi = "/users"
 }
 
 
