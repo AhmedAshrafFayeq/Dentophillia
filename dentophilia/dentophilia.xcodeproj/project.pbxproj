@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		2D17AB42277F3D5A00CCF963 /* CustomInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D17AB41277F3D5A00CCF963 /* CustomInterceptor.swift */; };
 		2D17AB4A277F400700CCF963 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D17AB49277F400700CCF963 /* Constants.swift */; };
-		2D17AB4F277F486300CCF963 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D17AB4E277F486300CCF963 /* NetworkManager.swift */; };
+		2D9B377F2791CDF600087CD9 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9B377C2791CDF600087CD9 /* BaseResponse.swift */; };
+		2D9B37802791CDF600087CD9 /* BaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9B377D2791CDF600087CD9 /* BaseApi.swift */; };
+		2D9B37812791CDF600087CD9 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9B377E2791CDF600087CD9 /* TargetType.swift */; };
 		2DD6BA3E27562E52003B2CEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD6BA3D27562E52003B2CEE /* AppDelegate.swift */; };
 		2DD6BA4027562E52003B2CEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD6BA3F27562E52003B2CEE /* SceneDelegate.swift */; };
 		2DD6BA4227562E52003B2CEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD6BA4127562E52003B2CEE /* ViewController.swift */; };
@@ -50,7 +52,9 @@
 /* Begin PBXFileReference section */
 		2D17AB41277F3D5A00CCF963 /* CustomInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInterceptor.swift; sourceTree = "<group>"; };
 		2D17AB49277F400700CCF963 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		2D17AB4E277F486300CCF963 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2D9B377C2791CDF600087CD9 /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		2D9B377D2791CDF600087CD9 /* BaseApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseApi.swift; sourceTree = "<group>"; };
+		2D9B377E2791CDF600087CD9 /* TargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		2DD6BA3A27562E52003B2CEE /* dentophilia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dentophilia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD6BA3D27562E52003B2CEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DD6BA3F27562E52003B2CEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,10 +134,20 @@
 		2D17AB40277F3D1300CCF963 /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
-				2D17AB41277F3D5A00CCF963 /* CustomInterceptor.swift */,
-				2D17AB4E277F486300CCF963 /* NetworkManager.swift */,
+				2D9B377B2791CDD500087CD9 /* Base */,
 			);
 			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		2D9B377B2791CDD500087CD9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2D17AB41277F3D5A00CCF963 /* CustomInterceptor.swift */,
+				2D9B377D2791CDF600087CD9 /* BaseApi.swift */,
+				2D9B377C2791CDF600087CD9 /* BaseResponse.swift */,
+				2D9B377E2791CDF600087CD9 /* TargetType.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		2DD6BA3127562E52003B2CEE = {
@@ -489,18 +503,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D17AB4F277F486300CCF963 /* NetworkManager.swift in Sources */,
+				2D9B37812791CDF600087CD9 /* TargetType.swift in Sources */,
 				2DD6BA832756322B003B2CEE /* DentoViewController.swift in Sources */,
 				2D17AB4A277F400700CCF963 /* Constants.swift in Sources */,
 				2DD6BA8B275632BC003B2CEE /* DentoPresenter.swift in Sources */,
 				2DD6BA4227562E52003B2CEE /* ViewController.swift in Sources */,
 				2DD6BA90275636E0003B2CEE /* DentoInteractor.swift in Sources */,
 				2DD6BA4827562E52003B2CEE /* dentophilia.xcdatamodeld in Sources */,
+				2D9B37802791CDF600087CD9 /* BaseApi.swift in Sources */,
 				2DD6BA3E27562E52003B2CEE /* AppDelegate.swift in Sources */,
 				2DD6BAB527563D7B003B2CEE /* LocalizationSystem.swift in Sources */,
 				2DD6BA4027562E52003B2CEE /* SceneDelegate.swift in Sources */,
 				2D17AB42277F3D5A00CCF963 /* CustomInterceptor.swift in Sources */,
 				2DD6BA95275636EC003B2CEE /* DentoRouter.swift in Sources */,
+				2D9B377F2791CDF600087CD9 /* BaseResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
